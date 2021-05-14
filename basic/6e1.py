@@ -40,7 +40,7 @@ def quick_sort(array, start, end):
         while left <= end and array[left]<= array[pivot]:
             left += 1
         while right > start and array[right] >= array[pivot]:
-            left -= 1
+            right -= 1
         if left >right:
             array[right], array[pivot] = array[pivot], array[right]
         else:
